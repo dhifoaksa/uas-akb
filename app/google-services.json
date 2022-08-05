@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "696825405027",
+    "project_id": "dhiouas",
+    "storage_bucket": "dhiouas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696825405027:android:d402c97ca310a5ea1e6256",
+        "android_client_info": {
+          "package_name": "com.dhifo.uas_10119289"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696825405027-fvldlj4miocudivou0t8q9pcupa51hii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMueoyTxEllqkxzWrkcNivfj_qGw3kSQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696825405027-fvldlj4miocudivou0t8q9pcupa51hii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

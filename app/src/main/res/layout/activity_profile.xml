@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".activities.ProfileActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_menu"
+        app:menu="@menu/main_menu" android:background="@drawable/background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:navigationIcon="@drawable/menu"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="Profile"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="168dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/fotoku" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView2"
+                        android:layout_alignParentStart="true"
+                        android:text="NIM" />
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView2"
+                        android:layout_alignStart="@+id/TextView01"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:text="Nama" />
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView3"
+                        android:layout_alignStart="@+id/TextView02"
+                        android:layout_alignBottom="@+id/textView3"
+                        android:text="Kelas" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="10119289" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_alignEnd="@+id/textView1"
+                        android:layout_marginTop="20dp"
+                        android:text="Dhifo Aksa Hermawan" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView2"
+                        android:layout_alignEnd="@+id/textView2"
+                        android:layout_marginTop="20dp"
+                        android:text="IF-7" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearTop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="168dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ahmad" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <TextView
+                        android:id="@+id/TextView010"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView20"
+                        android:layout_alignParentStart="true"
+                        android:text="NIM" />
+
+                    <TextView
+                        android:id="@+id/TextView020"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView20"
+                        android:layout_alignStart="@+id/TextView010"
+                        android:layout_alignBottom="@+id/textView20"
+                        android:text="Nama" />
+
+                    <TextView
+                        android:id="@+id/TextView040"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView30"
+                        android:layout_alignStart="@+id/TextView020"
+                        android:layout_alignBottom="@+id/textView30"
+                        android:text="Kelas" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="10119266" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView10"
+                        android:layout_alignEnd="@+id/textView10"
+                        android:layout_marginTop="20dp"
+                        android:text="Ahmad Haris" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView20"
+                        android:layout_alignEnd="@+id/textView20"
+                        android:layout_marginTop="20dp"
+                        android:text="IF-7" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearTop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="168dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/nadya" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <TextView
+                        android:id="@+id/TextView0101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView201"
+                        android:layout_alignParentStart="true"
+                        android:text="NIM" />
+
+                    <TextView
+                        android:id="@+id/TextView0201"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView201"
+                        android:layout_alignStart="@+id/TextView0101"
+                        android:layout_alignBottom="@+id/textView201"
+                        android:text="Nama" />
+
+                    <TextView
+                        android:id="@+id/TextView0401"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView301"
+                        android:layout_alignStart="@+id/TextView0201"
+                        android:layout_alignBottom="@+id/textView301"
+                        android:text="Kelas" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="10119278" />
+
+                    <TextView
+                        android:id="@+id/textView201"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView101"
+                        android:layout_alignEnd="@+id/textView101"
+                        android:layout_marginTop="20dp"
+                        android:text="Nadia Siti Fatimah" />
+
+                    <TextView
+                        android:id="@+id/textView301"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView201"
+                        android:layout_alignEnd="@+id/textView201"
+                        android:layout_marginTop="20dp"
+                        android:text="IF-7" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearTop3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="168dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/tyas" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <TextView
+                        android:id="@+id/TextView01011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView2011"
+                        android:layout_alignParentStart="true"
+                        android:text="NIM" />
+
+                    <TextView
+                        android:id="@+id/TextView02011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView2011"
+                        android:layout_alignStart="@+id/TextView01011"
+                        android:layout_alignBottom="@+id/textView2011"
+                        android:text="Nama" />
+
+                    <TextView
+                        android:id="@+id/TextView04011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView3011"
+                        android:layout_alignStart="@+id/TextView02011"
+                        android:layout_alignBottom="@+id/textView3011"
+                        android:text="Kelas" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView1011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="10119274" />
+
+                    <TextView
+                        android:id="@+id/textView2011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1011"
+                        android:layout_alignEnd="@+id/textView1011"
+                        android:layout_marginTop="20dp"
+                        android:text="Ingtiaz dyah NH" />
+
+                    <TextView
+                        android:id="@+id/textView3011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView2011"
+                        android:layout_alignEnd="@+id/textView2011"
+                        android:layout_marginTop="20dp"
+                        android:text="IF-7" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearTop4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="168dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/nggia" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <TextView
+                        android:id="@+id/TextView010111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView20111"
+                        android:layout_alignParentStart="true"
+                        android:text="NIM" />
+
+                    <TextView
+                        android:id="@+id/TextView020111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView20111"
+                        android:layout_alignStart="@+id/TextView010111"
+                        android:layout_alignBottom="@+id/textView20111"
+                        android:text="Nama" />
+
+                    <TextView
+                        android:id="@+id/TextView040111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView30111"
+                        android:layout_alignStart="@+id/TextView020111"
+                        android:layout_alignBottom="@+id/textView30111"
+                        android:text="Kelas" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView10111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="10119261" />
+
+                    <TextView
+                        android:id="@+id/textView20111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView10111"
+                        android:layout_alignEnd="@+id/textView10111"
+                        android:layout_marginTop="20dp"
+                        android:text="Anggia regina w" />
+
+                    <TextView
+                        android:id="@+id/textView30111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView20111"
+                        android:layout_alignEnd="@+id/textView20111"
+                        android:layout_marginTop="20dp"
+                        android:text="IF-7" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
